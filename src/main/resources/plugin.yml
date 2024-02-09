@@ -1,0 +1,7 @@
+name: Rechant
+version: '${project.version}'
+main: me.beayoung.rechant.Rechant
+api-version: '1.20'
+authors: [bea-young]
+description: A plugin that allows you to remove enchantments from items and transfer them onto books.
+website: https://github.com/bea-young/rechant
