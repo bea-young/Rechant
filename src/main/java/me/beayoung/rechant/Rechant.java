@@ -31,6 +31,7 @@ public final class Rechant extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
 
         getLogger().info("Plugin enabled!");
+
     }
 
     @Override
@@ -69,7 +70,8 @@ public final class Rechant extends JavaPlugin implements Listener {
 
     @EventHandler
     public void doRecycle(InventoryClickEvent event) {
-        if (event.getInventory().getType() != InventoryType.ANVIL) return;
+        if (event.getClickedInventory() == null) return;
+        if (event.getClickedInventory().getType() != InventoryType.ANVIL) return;
 
         if (event.getSlot() != 2) return;
         if (!Objects.equals(Objects.requireNonNull(event.getInventory().getItem(2)).getItemMeta().getPersistentDataContainer().get(NamespacedKey.minecraft("rechant"), PersistentDataType.STRING), "true")) return;

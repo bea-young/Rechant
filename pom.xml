@@ -6,7 +6,7 @@
 
   <groupId>me.beayoung</groupId>
   <artifactId>Rechant</artifactId>
-  <version>2.0.1-RC</version>
+  <version>2.0.1-FINAL</version>
   <packaging>jar</packaging>
 
   <name>Rechant</name>
